@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <div class="header">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>Age Calculator</h1>
+            </div>
+            
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="birthdate">Enter your birth date:</label>
+                    <input type="date" id="birthdate" required>
+                </div>
+                <button onclick="calculateAge()" class="calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate Age
+                </button>
+            </div>
+
+            <div class="result" id="result">
+                <div class="result-card age">
+                    <i class="fas fa-user-clock"></i>
+                    <h3>Your Age</h3>
+                    <p id="ageYears"></p>
+                    <p id="ageMonths"></p>
+                    <p id="ageDays"></p>
+                </div>
+                
+                <div class="result-card birthday">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Next Birthday</h3>
+                    <p id="nextBirthday"></p>
+                    <div id="birthdayMessage"></div>
+                </div>
+
+                <div class="result-card details">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Additional Info</h3>
+                    <p id="totalDays"></p>
+                    <p id="totalMonths"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
